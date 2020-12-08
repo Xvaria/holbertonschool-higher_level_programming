@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-sn = str(number)
-sn = sn[-1]
-ln = int(sn)
+ln = int(str(number)[-1])
 if number < 0:
     ln = ln * -1
 if ln > 5:
