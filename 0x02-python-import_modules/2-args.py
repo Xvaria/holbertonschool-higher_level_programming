@@ -7,5 +7,5 @@ if __name__ == "__main__":
         while i < len(argv):
             print("{}: {}".format(i, argv[i]))
             i = i + 1
-        else:
-            print("{} arguments.".format(len(argv) - 1))
+    else:
+        print("{} arguments.".format(len(argv) - 1))
