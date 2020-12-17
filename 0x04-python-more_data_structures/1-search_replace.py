@@ -3,7 +3,7 @@ def search_replace(my_list, search, replace):
     a = my_list[:]
     b = 0
     for i in a:
-        if i == 2:
+        if i == search:
             a[b] = replace
         b = b + 1
     return a
