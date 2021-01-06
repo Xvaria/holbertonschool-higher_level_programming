@@ -6,14 +6,17 @@ class Square:
     'class with one atribute, two errors, a public instance method and two\
     properties'
     def __init__(self, size=0, position=(0, 0)):
+        'method to init'
         self.__size = size
         self.__position = position
 
     def area(self):
+        'method to return area'
         a = self.__size * self.__size
         return(a)
 
     def my_print(self):
+        'method to print'
         if self.size == 0:
             print()
         if self.position[1] > 0:
@@ -28,15 +31,18 @@ class Square:
 
     @property
     def position(self):
+        'property to return position'
         return(self.__position)
 
     @position.setter
     def position(self, value):
+        'setter for new value to position'
         if (type(value) != tuple or len(value) != 2 or value[0] < 0 or
                 value[1] < 0 or type(value[0]) != int or
                 type(value[1]) != int):
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = value
+        else:
+            self.__position = value
 
     @property
     def size(self):
