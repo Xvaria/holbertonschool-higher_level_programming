@@ -7,8 +7,8 @@ class Square:
     properties'
     def __init__(self, size=0, position=(0, 0)):
         'method to init'
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         'method to return area'
@@ -17,10 +17,10 @@ class Square:
 
     def my_print(self):
         'method to print'
-        if self.size == 0:
+        if self.__size == 0:
             print()
-        if self.position[1] > 0:
-            for k in range(self.position[1]):
+        if self.__position[1] > 0:
+            for k in range(self.__position[1]):
                 print()
         for i in range(self.__size):
             for l in range(self.__position[0]):
