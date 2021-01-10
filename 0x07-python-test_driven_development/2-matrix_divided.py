@@ -15,7 +15,7 @@ def matrix_divided(matrix, div):
     Raises:
         TypeError or ZeroDivisionError
     '''
-B
+
     if type(matrix) != list or len(matrix) == 0:
         raise TypeError("matrix must be a matrix (list of lists)\
         of integers/floats")
