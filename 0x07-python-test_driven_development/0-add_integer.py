@@ -3,8 +3,18 @@
 
 
 def add_integer(a, b=98):
-    'get two arguments if two arguments is int or float add
-    but any arguments is other type show TypeError'
+    '''Function toadd two integers or floats
+
+    Args:
+        a: value 1 int or float
+        b: value 2 int or float, default = 98
+
+    Returns:
+        Result to add
+
+    Raises:
+        TypeError
+    '''
 
     if type(a) == int or type(a) == float:
         a = int(a)
