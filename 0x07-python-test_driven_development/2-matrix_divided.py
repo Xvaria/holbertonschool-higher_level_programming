@@ -1,5 +1,21 @@
 #!/usr/bin/python3
+'divide matrix'
+
+
 def matrix_divided(matrix, div):
+    '''Function to divide matrix of list integers or floats
+
+    Args:
+        matrix: list of int or float
+        div: divisor int or float
+
+    Returns:
+        new matrix with result to divide for div
+
+    Raises:
+        TypeError or ZeroDivisionError
+    '''
+B
     if type(matrix) != list or len(matrix) == 0:
         raise TypeError("matrix must be a matrix (list of lists)\
         of integers/floats")
