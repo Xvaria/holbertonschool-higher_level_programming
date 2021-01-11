@@ -3,6 +3,7 @@
 
 
 class Rectangle:
+    'class defines a rectangle'
     def __init__(self, width=0, height=0):
         'starts our rectangle with default values'
         self.height = height
