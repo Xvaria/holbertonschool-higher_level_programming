@@ -15,6 +15,7 @@ class Rectangle:
 
     def area(self):
         'returns the area of the rectangle'
+        Rectangle.number_of_instances += 1
         a = self.__width * self.__height
         return(a)
 
