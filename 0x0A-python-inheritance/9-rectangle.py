@@ -1,4 +1,4 @@
-#!/usr/bin/python3lbertonschool-higher_level_programming/0x0A-python-inheritance$ cat 8-rectangle.py
+#!/usr/bin/python3
 'Rectangle inherits from BaseGeometry'
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
