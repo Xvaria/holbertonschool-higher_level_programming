@@ -29,16 +29,16 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        ''
+        'return rectangle properties'
         return('[{}] ({}) {}/{} - {}/{}'.format(self.__class__.__name__,
-                                                      self.id, self.__x,
-                                                      self.__y, self.__width,
-                                                      self.__height))
+                                                self.id, self.__x,
+                                                self.__y, self.__width,
+                                                self.__height))
 
     def to_dictionary(self):
-        ''
-        return({'id':self.id, 'width':self.__width, 'height':self.__height,
-                'x':self.__x, 'y':self.__y})
+        'returns the dictionary representation of a rectangle'
+        return({'id': self.id, 'width': self.__width,
+                'height': self.__height, 'x': self.__x, 'y': self.__y})
 
     def update(self, *args, **kwargs):
         'assigns an argument to each attribute'
