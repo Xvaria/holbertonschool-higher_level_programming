@@ -7,9 +7,9 @@ if (myArgs.length !== 3) {
   console.log('Not a number');
 } else {
   const newArgs = parseInt(myArgs[2]);
-    if (isNaN(newArgs)) {
-      console.log('Not a number');
-    } else {
-      console.log(newArgs);
-    }
+  if (isNaN(newArgs)) {
+    console.log('Not a number');
+  } else {
+    console.log(newArgs);
+  }
 }
