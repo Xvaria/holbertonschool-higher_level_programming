@@ -10,6 +10,6 @@ if (myArgs.length !== 3) {
   if (isNaN(newArgs)) {
     console.log('Not a number');
   } else {
-    console.log(newArgs);
+    console.log('My number: ' + newArgs);
   }
 }
