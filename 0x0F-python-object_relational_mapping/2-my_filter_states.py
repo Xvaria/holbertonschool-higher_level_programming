@@ -13,6 +13,7 @@ if __name__ == '__main__':
     )
     cursor = con.cursor()
     cursor.execute("SELECT states.id, states.name FROM states WHERE\
-                    states.name = '{}' ORDER BY states.id".format(argv[4]))
+                    states.name = \'{}\' ORDER BY states.id".format(argv[4]))
     for item in cursor:
-        print(item)
+        if item == argv[4]:
+            print(item)
