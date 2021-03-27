@@ -10,10 +10,8 @@ if __name__ == "__main__":
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]),
                            pool_pre_ping=True)
     enter = sessionmaker()(bind=engine)
-    query = enter.query(State).order_by(State.id)
+    query = enter.query(State).first()
     if query:
-        for item in query:
-            if item.id == 1:
-                print("{}: {}".format(item.id, item.name))
+        print("{}: {}".format(query.id, query.name))
     else:
         print('Nothing')
