@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''lists all State objects from the database hbtn_0e_6_usa'''
+'''prints the first State object from the database hbtn_0e_6_usa'''
 import sys
 from model_state import Base, State
 from sqlalchemy import (create_engine)
@@ -11,6 +11,9 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     enter = sessionmaker()(bind=engine)
     query = enter.query(State).order_by(State.id)
-    for item in query:
-        if item.id == 1:
-            print("{}: {}".format(item.id, item.name))
+    if query:
+        for item in query:
+            if item.id == 1:
+                print("{}: {}".format(item.id, item.name))
+    else:
+        print('Nothing')
