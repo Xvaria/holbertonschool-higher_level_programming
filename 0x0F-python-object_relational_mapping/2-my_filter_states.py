@@ -15,5 +15,5 @@ if __name__ == '__main__':
     cursor.execute("SELECT states.id, states.name FROM states WHERE\
                     states.name = \'{}\' ORDER BY states.id".format(argv[4]))
     for item in cursor:
-        if item == argv[4]:
+        if item[1] == argv[4]:
             print(item)
