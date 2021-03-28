@@ -15,4 +15,4 @@ if __name__ == "__main__":
     query = enter.query(State).filter(State.name.like('%a%'))
     for item in query:
         enter.delete(item)
-        enter.commit()
+    enter.commit()
