@@ -12,7 +12,7 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     enter = sessionmaker()(bind=engine)
     query = enter.query(State, City).join(City, State.id == City.state_id)\
-            .order_by(City.id)
+                                    .order_by(City.id)
     for item in query:
-        print("{}: ({}) {}".format(item.State.name,\
+        print("{}: ({}) {}".format(item.State.name,
                                    item.City.id, item.City.name))
