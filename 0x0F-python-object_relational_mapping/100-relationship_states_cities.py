@@ -17,4 +17,3 @@ if __name__ == "__main__":
     nstate = State(name="California", cities=[ncity])
     enter.add(ncity)
     enter.commit()
-    enter.close()
