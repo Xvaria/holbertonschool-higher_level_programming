@@ -15,5 +15,5 @@ if __name__ == "__main__":
     enter = sessionmaker()(bind=engine)
     ncity = City(name="San Francisco")
     nstate = State(name="California", cities=[ncity])
-    enter.add(ncity)
+    enter.add(nstate)
     enter.commit()
