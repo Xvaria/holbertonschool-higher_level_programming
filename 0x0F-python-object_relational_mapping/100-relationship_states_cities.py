@@ -17,6 +17,5 @@ if __name__ == "__main__":
     ncity = City(name="San Francisco")
     nstate = State(name="California", cities=[ncity])
     enter.add(nstate)
-    enter.add(ncity)
     enter.commit()
     enter.close()
