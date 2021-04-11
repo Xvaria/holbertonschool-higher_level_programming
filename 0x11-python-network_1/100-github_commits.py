@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-'''takes 2 arguments in order to solve this challenge'''
 '''list 10 commits of the repository rails by the user rails'''
 import requests
 from sys import argv
