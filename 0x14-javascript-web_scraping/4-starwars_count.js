@@ -10,7 +10,7 @@ request(argv[2], function (error, response) {
   const jsonResp = JSON.parse(response.body);
   for (const film of jsonResp.results) {
     for (const actor of film.characters) {
-      if (actor === 'https://swapi-api.hbtn.io/api/people/18/') {
+      if (actor.split('/')[5] === '18') {
         count += 1;
       }
     }
